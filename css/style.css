@@ -81,8 +81,18 @@ ol {
   text-align: left;
 }
 
+.content-title {
+  font-size: 45px;
+  text-align: center;
+}
+
 .section-title span {
   color: #979797;
+}
+
+.content-title span {
+  color: #979797;
+  font-size: 30px;
 }
 
 /*------------------------
@@ -519,6 +529,15 @@ ol {
   display: block;
 }
 
+.portfolio-intro .section-header h2 {
+  font-size: 15px;
+}
+
+.portfolio-intro .img-fluid{
+  max-width: 100%;
+  height: auto;
+}
+
 .img-popup-warp .mfp-content {
   opacity: 0;
   -webkit-transform: scale(0.8);
@@ -582,6 +601,55 @@ ol {
   left: 0;
   border: 2px solid #000;
   z-index: 1;
+}
+
+.milestone {
+  margin-top: 15px;
+}
+
+.milestone h2 {
+  font-size: 60px;
+}
+
+.milestone h2 span {
+  font-size: 18px;
+  color: #979797;
+}
+
+/*------------------------
+    Content Page
+--------------------------*/
+.content-info {
+  font-size: 16px;
+  font-family: "Roboto Light", sans-serif;
+  color: #C42026;
+}
+
+.content-info h4{
+  font-size: 1.75rem;
+  color: black;
+}
+
+.content-info blockquote{
+  color: #C42026;
+  font-size: 25px;
+  line-height: 40px;
+  font-style: italic;
+  font-weight: 700;
+  text-align: center;
+}
+
+.content-info h3{
+  color: #C42026;
+}
+
+.content-info p{
+  color: black;
+}
+
+.content-info p1{
+  font-size: 15px;
+  color: black;
 }
 
 .milestone {
@@ -772,6 +840,7 @@ ol {
   .section-title {
     font-size: 45px;
   }
+
   .portfolio-filter {
     text-align: center;
   }
