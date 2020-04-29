@@ -555,9 +555,13 @@ ol {
   transition: all 0.3s ease 0s;
 }
 
+.portfolio-item .pi-inner h3 span{
+  font-size: 30px;
+}
+
 .portfolio-item .pi-inner h3 {
   opacity: 0;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 300;
   position: absolute;
   left: 50px;
@@ -574,6 +578,11 @@ ol {
 }
 
 .portfolio-item:hover .pi-inner h2 {
+  opacity: 1;
+  letter-spacing: 0;
+}
+
+.portfolio-item:hover .pi-inner h3 span{
   opacity: 1;
   letter-spacing: 0;
 }
