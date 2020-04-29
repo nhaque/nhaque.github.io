@@ -1,6 +1,6 @@
 /* =================================
 ------------------------------------
-  Riddle - Portfolio
+  Nabeeha - Portfolio
   Version: 1.0
  ------------------------------------ 
  ====================================*/
@@ -158,6 +158,78 @@ ol {
     -webkit-transform: rotate(360deg);
   }
 }
+
+/*=== Side Nav ===*/
+.side-nav {
+  position: fixed;
+  width: 15vw;
+  margin-top: 30vh;
+  margin-left: 5vw;
+  z-index: 1;
+}
+/**********************Side bar for navigation in portfolio pieces*******************8*/
+.bs-docs-sidebar {
+  padding-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/* all links in sidebar*/
+.bs-docs-sidebar .nav>li>a {
+  color: var(--secondary-black);
+  padding: 4px 20px;
+  font-family: 'Fakt', sans-serif;
+  font-size: 1.1em;
+  font-weight: 200;
+}
+/* nested links in sidebar*/
+.bs-docs-sidebar .nav .nav>li>a {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 30px;
+  font-size: 1em;
+}
+/* add transparent border to all links in sidebar*/
+.bs-docs-sidebar .nav>li>a {
+  border-left: 2px solid transparent;
+}
+/* active & hover links in sidebar*/
+.bs-docs-sidebar .nav>.active>a,
+.bs-docs-sidebar .nav>li>a:hover,
+.bs-docs-sidebar .nav>li>a:focus {
+  color: var(--primary-black);
+  text-decoration: none;
+  font-weight: 400;
+  background-color: transparent;
+  border-left: 1px solid black;
+}
+/* change font weight for all active links in sidebar*/
+.bs-docs-sidebar .nav>.active>a,
+.bs-docs-sidebar .nav>.active:hover>a,
+.bs-docs-sidebar .nav>.active:focus>a {
+  font-weight: 700;
+}
+/* change font weight for nested active links in sidebar*/
+.bs-docs-sidebar .nav .nav>.active>a,
+.bs-docs-sidebar .nav .nav>.active:hover>a,
+.bs-docs-sidebar .nav .nav>.active:focus>a {
+  font-weight: 400;
+}
+/*to make sidebar scrollable*/
+.bs-docs-sidebar > ul {
+  overflow-y: auto;
+  height: 100%;
+}
+
+/* hide all (inactive) nested list */
+.bs-docs-sidebar .nav ul.nav {
+  display: none;
+}
+/* show active nested list */
+.bs-docs-sidebar .nav>.active>ul.nav {
+  display: block;
+}
+/**********************Side bar for navigation in portfolio pieces END*******************8*/
+
 
 /*=== Buttons ===*/
 .site-btn {
@@ -621,13 +693,22 @@ ol {
 --------------------------*/
 .content-info {
   font-size: 16px;
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Segoe UI", sans-serif;
   color: #C42026;
 }
 
 .content-info h4{
   font-size: 1.75rem;
   color: black;
+}
+
+.content-info h5{
+  font-size: 1.25rem;
+  color:#979797;
+}
+
+.content-info h5 span{
+  color: #C42026;
 }
 
 .content-info blockquote{
