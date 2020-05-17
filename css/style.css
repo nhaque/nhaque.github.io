@@ -167,6 +167,41 @@ ol {
   margin-left: 5vw;
   z-index: 1;
 }
+
+.expand {
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom:5vh;
+  width:100vw;
+  height: 10vw;
+  min-height: 100px;
+  background-color: #f9f9f9;
+}
+
+.anchor {
+  display: block;
+  line-height: 200%;
+  color: #dfdfdf;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.anchor:hover {
+  cursor: pointer;
+  font-weight: 800;
+  color: #C42026;
+  text-decoration:none;
+}
+
+.anchor-active {
+  cursor: pointer;
+  /*change to the main colo here */
+  color: #C42026;
+  font-weight: 800;
+  text-decoration:none;
+}
+
 /**********************Side bar for navigation in portfolio pieces*******************8*/
 .bs-docs-sidebar {
   padding-left: 20px;
@@ -648,6 +683,11 @@ ol {
   color: #979797;
 }
 
+.footer-selected {
+  font-weight: bold; !important;
+  vertical-align: middle;
+}
+
 .social-links {
   margin-top: 60px;
   margin-bottom: 40px;
@@ -858,6 +898,39 @@ ol {
   font-style: italic;
 }
 
+/*****Button Underline From Left *******/
+.hvr-underline-from-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: var(--secondary-black);
+  height: 1px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+  right: 0;
+}
+
+/**/
+
+
 /* ===========================
   Responsive
 ==============================*/
@@ -941,4 +1014,10 @@ ol {
   .section-title {
     font-size: 30px;
   }
+}
+
+#sidebar {
+  position:fixed;
+  z-index: 1;
+  width:220px;
 }
